@@ -1,12 +1,16 @@
 import React from "react";
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+import Auth from "./pages/Auth";
 
 const App = () => {
   return (
     <BrowserRouter>
       <ToastContainer />
-      <h1>App</h1>
+      <Routes>
+        <Route path="/auth" element={<Auth />} />
+        <Route path="/" element={<Navigate to="/auth" />} />
+      </Routes>
     </BrowserRouter>
   );
 };
