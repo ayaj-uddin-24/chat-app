@@ -15,3 +15,13 @@
   cursor: pointer;
   text-decoration: none;
 }
+
+/* ==================== Profile page ==================== */
+#profile .row {
+  height: 60vh;
+  width: 700px;
+}
+
+#profile .avatar {
+  cursor: pointer;
+}
